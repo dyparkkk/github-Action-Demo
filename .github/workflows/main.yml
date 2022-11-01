@@ -9,7 +9,7 @@ jobs:
     steps:
       # Checkout
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           lfs: true
 
@@ -37,8 +37,8 @@ jobs:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
-          unityVersion: 2020.3.2f1
-          targetPlatform: StandaloneLinux64
+          unityVersion: 2021.3.10f1
+          targetPlatform: windows
 
       # Output
       - uses: actions/upload-artifact@v2
