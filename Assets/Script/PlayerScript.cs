@@ -8,6 +8,12 @@ namespace QuickStart
 {
     public class PlayerScript : NetworkBehaviour
     {
+        [SyncVar(hook = nameof(OnNameChanged))]
+        public string playerName;
+
+        [SyncVar(hook = nameof(OnColorChanged))]
+        public Color playerColor = Color.white;
+        
         public TextMeshPro playerNameText;
         public GameObject floatingInfo;
 
@@ -16,13 +22,7 @@ namespace QuickStart
 
         private Weapon activeWeapon;
         private float weaponCooldownTime;
-
-        [SyncVar(hook = nameof(OnNameChanged))]
-        public string playerName;
-
-        [SyncVar(hook = nameof(OnColorChanged))]
-        public Color playerColor = Color.white;
-
+        
         private void Awake()
         {
             // allow all players to run this
@@ -140,7 +140,7 @@ namespace QuickStart
                 }
             }
         }
-
+        
         [Command]
         void CmdShootRay()
         {
@@ -150,7 +150,7 @@ namespace QuickStart
         [ClientRpc]
         void RpcFireWeapon()
         {
-            //bulletAudio.Play(); muzzleflash  etc
+            //bulletAudio.Play(); 
             GameObject bullet = Instantiate(activeWeapon.weaponBullet, activeWeapon.weaponFirePosition.position, activeWeapon.weaponFirePosition.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * activeWeapon.weaponSpead;
             Destroy(bullet, activeWeapon.weaponLife);

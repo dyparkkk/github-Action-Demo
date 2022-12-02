@@ -15,7 +15,10 @@ ScriptsOnlyBuild:
     - Mirror.NetworkManagerHUD
     - Mirror.NetworkStartPosition
     - kcp2k.KcpTransport
+    Unity.CollabProxy.Editor.dll:
+    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
@@ -696,7 +699,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 65ced849ad3124d41cec2929fd159698
+      Hash: fb27126c465e2e7ca30cb389c1010a3d
     assemblyName: Assembly-CSharp.dll
     namespaceName: QuickStart
     className: PlayerScript
@@ -1792,4 +1795,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameList.unity
   - Assets/Scenes/MyScene.unity
   - Assets/Scenes/MyOtherScene.unity
-  playerPath: /Users/dypark/quick03.app
+  playerPath: /Users/dypark/quick06.app

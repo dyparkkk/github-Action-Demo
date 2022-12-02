@@ -359,7 +359,7 @@
 -r:"/Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
--r:"/Users/dypark/code/QuickProject/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"/Users/dypark/code/unity/QuickProject/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll"
 -r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll"
 -r:"Library/Bee/artifacts/StandaloneOSX_CodeGen/Mirror.ref.dll"
